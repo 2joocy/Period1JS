@@ -88,7 +88,24 @@ function myFilter(array, callback){
 ```
 #### Explain the methods map, filter and reduce
 ```sh
+function ex4a(arr){
+    return ("<ul>" + arr.map((name) => "<li>" + name + "</li>").join("\n") + "</ul>");
+    
+}
 
+function ex4b(){
+    document.getElementById("tableData").innerHTML = (
+    '<table style="width:100%">' + 
+    '<tr>' +
+    '<th>Name</th>' +
+    '<th>Phone Number</th>' + 
+    '</tr>' +
+    '<tr>' + 
+      (names.map((person) => "<td>" + person.name + "</td>" + "<td>" + person.phone + "</td>").join("\n")) +
+    '</tr>' +
+    '</table>'
+    );
+}
 ```
 #### User defined reusable modules implemented in Node.js
 ```sh
