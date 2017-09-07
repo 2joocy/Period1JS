@@ -87,6 +87,7 @@ function myFilter(array, callback){
 
 ```
 #### Explain the methods map, filter and reduce
+Map & Join
 ```sh
 function ex4a(arr){
     return ("<ul>" + arr.map((name) => "<li>" + name + "</li>").join("\n") + "</ul>");
@@ -107,6 +108,13 @@ function ex4b(){
     );
 }
 ```
+Reduce
+```sh
+function myReduce(){
+    return numbers.reduce((total, number) => total + number);
+}
+```
+
 #### User defined reusable modules implemented in Node.js
 ```sh
 
