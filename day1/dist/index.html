@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../src/index.js" />
+    <script>
+    document.getElementById("tableData").innerHTML = (
+    '<table style="width:100%">' + 
+    '<tr>' +
+    '<th>Name</th>' +
+    '<th>Phone Number</th>' + 
+    '</tr>' +
+    '<tr>' + 
+      (names.map((person) => "<tr><td>" + person.name + "</td>" + "<td>" + person.phone + "</td></tr>").join("\n")) +
+    '</tr>' +
+    '</table>'
+    );
+    </script>
+</head>
+<body onLoad="ex4b()">
+<div id="tableData">
+
+</div>
+</body>
+</html>
