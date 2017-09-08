@@ -109,7 +109,31 @@ var arrModule = (function() {
 ```
 #### Immediately-Invoked Function Expressions (IIFE)
 ```sh
-
+var arrModule = (function() {
+    var arr = ["Lars", "Jens", "Bo", "Frederik", "William", "Lars", "Peter", "Jan", "Bo"];
+    
+        function filterArray(){
+            arr.filter(function(name){
+                if(name.length > 3){
+                    arr2.push(name);
+                }
+            });
+            
+            console.log(arr2);
+        }
+        
+        function mapArray(){
+            arr.map(function(name){
+                arr2.push(name.toUpperCase);
+            });
+        
+            console.log(arr2);
+        }
+    return {
+            mapArray: mapArray,
+            filterArray: filterArray
+        };
+}());
 ```
 #### JavaScripts Prototype
 ```sh
