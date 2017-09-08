@@ -200,14 +200,32 @@ function myReduce(){
 }
 ```
 
-#### User defined reusable modules implemented in Node.js
-```sh
-
-```
-
 # ES6-7 and TypeScript
 #### Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.
+
+```sh
+var counter = {
+    count: 0,
+    inc: () => {
+      this.count++;
+    }
+  }
+```
+
+Let and const are inscope variable initialization methods. Declaring vars within a method will still grant it global scope, however Let and Const are defined when you want to use variable or konstants within a method, without outside parameters.
+
 #### Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
-#### Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
+You can export functions or whole modules with ES2015. Using this bit of code to export any given function:
+```sh
+export default {f};
+```
+
+Importing those functions is as easy as:
+
+```sh
+import {f} from "./index";
+```
+
+You can export any given functions with the brackets, whereas you can 
 #### Provide examples with es6, running in a browser, using Babel and Webpack
-#### Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics
+Refer to Webpack project
