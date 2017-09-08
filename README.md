@@ -40,7 +40,17 @@ Javascript can only hoist declarations, but no initializations.
 
 #### **this** in JavaScript
 ```sh
+//THIS EXAMPLES
 
+var arr = [];
+
+console.log(this.arr.map((name) => {return name}));
+
+//THIS NO SCOPE
+function foo(){
+    var arr = [];
+    console.log(this.arr);
+}
 ```
 #### Closure and Modules
 ```sh
